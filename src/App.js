@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import data from './data';
 import './Birthday.css';
+import List from './component/List';
 
 function App() {
   const [people, setPeople] = useState(data);
@@ -8,8 +9,9 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h3>... Birthday Today</h3>
-        <button>Clear All</button>
+        <h3>{people.length} Birthday Today</h3>
+        <List people={ people } />
+       
       </section>
     </main>
   );
