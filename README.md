@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# React project 1: Birthday Reminder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project deploy here [Create React App](https://1hakann.github.io/01-birthday-reminder-app).
 
-## Available Scripts
+## To clone the project
 
-In the project directory, you can run:
+git clone https://github.com/1hakann/01-birthday-reminder-app.git
+In the project directory, you can run: npm run start
+Node must be installed to run the project.
 
-### `npm start`
+### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This app aims not to miss the special days of the people you love by reminding them of their birthdays.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Birthday Reminder, the first of the React app series of practice apps, includes learning React step by step.
 
-### `npm test`
+The css design has been cloned as an example. But the first section with root variables was prepared to be handled separately for the second and third components, which are the main skeleton of the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The project progressed as follows
 
-### `npm run build`
+First of all, useState, data file, css and List component were imported in App js.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then people variable sets are defined and these two are synchronized by taking the data with useState.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Then the return method skeleton to be rendered was created.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the next step, the data file was created in json format.
 
-### `npm run eject`
+So far, the first two style steps have been written in the css file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+After that, the List component was created as an arrow function with React import. The return content is generated as a single list view.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As the next step, a List component and a button were added to App js. Data count was taken and added in the header.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Added people attribute to List component. and people sent.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Now the List component is back. People are received via parameter. Then, it was navigated with the people map method and each of the data sections was taken as a variable. The list has been added to this field by adding the Return.
 
-## Learn More
+We can now add each of these variables to their respective fields. After that, we added the key to the parend tag and gave it an id. For img src, we called name in h4 for image sub and age in p. Hurrayyy! Our data has been successfully listed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Now we can write css for List and people.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Finally, let's add functionality to our button. Let's clear our list. That's why we added onClick. Here we added setPeople with the arrow function and gave it as an empty array. We can test it. It must be working.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
+Before we finish, let's add our css codes for our button. Here is the Birthday Reminder App with its first version.
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Now it's time to deploy.
 
-### `npm run build` fails to minify
+For this, let's add a homepage to package.json. Let's add git remote set-url as origin. Then let's add the predeploy and deploy commands to the scripts. Now let's do npm install gh-pages --save-dev. Now let's perform the build and then deploy operations. That is all.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Improvements will be made for the next versions.
+
+Good coding.
