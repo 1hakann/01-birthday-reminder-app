@@ -1,6 +1,6 @@
 # React project 1: Birthday Reminder
 
-This project deploy here [Create React App](https://1hakann.github.io/01-birthday-reminder-app).
+This project deploy here [Birthday Reminder App](https://1hakann.github.io/01-birthday-reminder-app).
 
 ## To clone the project
 
