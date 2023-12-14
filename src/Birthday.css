@@ -152,7 +152,7 @@ p {
 }
 
 main {
-    min-height: 50vw;
+    min-height: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
